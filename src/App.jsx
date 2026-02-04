@@ -84,7 +84,7 @@ export default function App() {
 
         <Hero />
 
-        <Section id="education" title="Education" subtitle="Academic background.">
+        <Section id="education" title="Education" subtitle="Academic background." tight>
           <div className="rounded-2xl border border-amber-100/80 bg-amber-50/70 p-6 shadow-[0_12px_36px_rgba(15,23,42,0.08)]">
             <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
               <div>
@@ -98,7 +98,7 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="projects" title="Projects" subtitle="A few things I’ve built recently.">
+        <Section id="projects" title="Projects" subtitle="A few things I’ve built recently." tight>
           <div className="grid gap-4 md:grid-cols-2">
             {PROJECTS.map((p) => (
               <ProjectCard key={p.title} {...p} />
@@ -106,7 +106,7 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="skills" title="Skills" subtitle="Tools I’m comfortable shipping with.">
+        <Section id="skills" title="Skills" subtitle="Tools I’m comfortable shipping with." tight>
           <div className="flex flex-wrap gap-2">
             {SKILLS.map((s) => (
               <Pill key={s}>{s}</Pill>
@@ -114,7 +114,7 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="experience" title="Experience" subtitle="Where I’ve applied my skills in real projects.">
+        <Section id="experience" title="Experience" subtitle="Where I’ve applied my skills in real projects." tight>
           <div className="space-y-4">
             {EXPERIENCE.map((e) => (
               <ExperienceItem key={`${e.role}-${e.company}`} {...e} />
@@ -122,7 +122,7 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="contact" title="Contact" subtitle="Let’s connect.">
+        <Section id="contact" title="Contact" subtitle="Let’s connect."tight>
           <div className="max-w-3xl text-zinc-700">
             <p>
               If you’re hiring for Software Engineering / QA roles (California or remote), I’d love to connect.
@@ -228,9 +228,12 @@ function Hero() {
   );
 }
 
-function Section({ id, title, subtitle, children }) {
+function Section({ id, title, subtitle, children, tight }) {
   return (
-    <section id={id} className="mt-24 scroll-mt-28 border-t border-amber-200/90 pt-8 pt-10">
+    <section
+      id={id}
+      className={`scroll-mt-28 border-t border-amber-200/90 pt-10 ${tight ? "mt-12" : "mt-24"}`}
+    >
       <div>
         <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
         {subtitle ? <p className="mt-1 text-sm text-zinc-500">{subtitle}</p> : null}
