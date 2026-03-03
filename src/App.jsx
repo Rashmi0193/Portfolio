@@ -63,7 +63,7 @@ const EXPERIENCE = [
     time: "May 2025 – Dec 2025",
   },
   {
-    role: "Data Analyst",
+    role: "Software Developer",
     company: "P R Sales Corporation Pvt. Ltd.",
     time: "Jan 2017 – Nov 2020",
   },
