@@ -58,7 +58,7 @@ const PROJECTS = [
     title: "AI Job Assistant Copilot",
     desc: " Built responsive, reusable React components for an AI-powered job assistant, including a multi-step profile setup wizard for skills, target industries, and salary preferences. Developed resume parsing and resume-score interfaces, structuring frontend workflows for integration with backend AI services.",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    href: "#",
+    href: "https://github.com/Rashmi0193/PMAJobAssistantAgent",
   },
   {
     title: "Weather App – Real-Time Weather Forecast",
