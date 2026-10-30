@@ -13,7 +13,7 @@ const LINKS = {
   email: "mailto:purandarerashmi1@gmail.com",
   github: "https://github.com/Rashmi0193",
   linkedin: "https://www.linkedin.com/in/rashmi-purandare-01rp/",
-  resume: "/Resume- Rashmi Purandare.pdf",
+  resume: "public/Resume-Rashmi-Purandare.pdf",
 };
 
 const SKILLS = [
@@ -54,9 +54,26 @@ const PROJECTS = [
     tags: ["Java", "Selenium", "TestNG", "Manual Testing", "Automation"],
     href: "#",
   },
+  {
+    title: "AI Job Assistant Copilot",
+    desc: " Built responsive, reusable React components for an AI-powered job assistant, including a mulT-step profile setup wizard for skills, target industries, and salary preferences. Developed resume parsing and resume-score interfaces, structuring frontend workflows for integraTon with backend AI services.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    href: "#",
+  },
+  {
+    title: "Weather App – Real-Time Weather Forecast",
+    desc: "Developed a responsive weather application that fetches and displays real-time weather information for searched locations. Integrated weather APIs to retrieve current weather conditions and forecast data, building an intuitive interface for users to explore location-based weather updates.",
+    tags: ["React", "JavaScript", "CSS", "Weather API"],
+    href: "https://github.com/Rashmi0193/WeatherApp",
+    },
 ];
 
 const EXPERIENCE = [
+  {
+    role: "Software Engineer",
+    company: "Saayam For All",
+    time: "Feb 2026 – Present",
+  },
   {
     role: "Software Engineering Intern",
     company: "BirthdayMessaging.io",
@@ -98,6 +115,14 @@ export default function App() {
           </div>
         </Section>
 
+        <Section id="experience" title="Experience" subtitle="Where I’ve applied my skills in real projects." tight>
+          <div className="space-y-4">
+            {EXPERIENCE.map((e) => (
+              <ExperienceItem key={`${e.role}-${e.company}`} {...e} />
+            ))}
+          </div>
+        </Section>
+
         <Section id="projects" title="Projects" subtitle="A few things I’ve built recently." tight>
           <div className="grid gap-4 md:grid-cols-2">
             {PROJECTS.map((p) => (
@@ -114,18 +139,10 @@ export default function App() {
           </div>
         </Section>
 
-        <Section id="experience" title="Experience" subtitle="Where I’ve applied my skills in real projects." tight>
-          <div className="space-y-4">
-            {EXPERIENCE.map((e) => (
-              <ExperienceItem key={`${e.role}-${e.company}`} {...e} />
-            ))}
-          </div>
-        </Section>
-
         <Section id="contact" title="Contact" subtitle="Let’s connect."tight>
           <div className="max-w-3xl text-zinc-700">
             <p>
-              If you’re hiring for Software Engineering / QA roles (California or remote), I’d love to connect.
+              If you’re hiring for Software Engineering roles (California or remote), I’d love to connect.
             </p>
           </div>
 
@@ -220,7 +237,7 @@ function Hero() {
 
         <p className="max-w-2xl text-zinc-600">{PROFILE.summary}</p>
         <p className="text-sm font-medium text-zinc-600">
-          Currently seeking Software Engineer / QA  roles.
+          Currently seeking Software Engineer roles.
         </p>
 
       </div>
