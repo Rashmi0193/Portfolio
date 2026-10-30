@@ -44,7 +44,7 @@ const SKILLS = [
 const PROJECTS = [
   {
     title: "SentinelAI - AI-powered IP protection platform ",
-    desc: "Using image similarity (CLIP + pHash) with FastAPI and a modern React UI system designed to safeguard creators’ intellectual property online. With the rise of generative AI and rapid content remixing, creators face unprecedented challenges in protecting their original work. SentinelAI provides an automated way to detect edited, cropped, recolored or AI-generated variations of an image across the web..",
+    desc: "Using image similarity (CLIP + pHash) with FastAPI and a modern React UI system designed to safeguard creators’ intellectual property online. With the rise of generative AI and rapid content remixing, creators face unprecedented challenges in protecting their original work. SentinelAI provides an automated way to detect edited, cropped, recolored or AI-generated variations of an image across the web.",
     tags: ["React", "FastAPI", "Postgres", "AWS", "AI"],
     href: "https://github.com/Bhuwan980/SentinelAI",
   },
@@ -56,7 +56,7 @@ const PROJECTS = [
   },
   {
     title: "AI Job Assistant Copilot",
-    desc: " Built responsive, reusable React components for an AI-powered job assistant, including a mulT-step profile setup wizard for skills, target industries, and salary preferences. Developed resume parsing and resume-score interfaces, structuring frontend workflows for integraTon with backend AI services.",
+    desc: " Built responsive, reusable React components for an AI-powered job assistant, including a multi-step profile setup wizard for skills, target industries, and salary preferences. Developed resume parsing and resume-score interfaces, structuring frontend workflows for integration with backend AI services.",
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     href: "#",
   },
@@ -195,11 +195,11 @@ function Navbar() {
           <nav className="hidden items-center gap-3 text-sm text-zinc-600 sm:flex">
             <NavLink href="#education">Education</NavLink>
             <NavSeparator />
-            <NavLink href="#projects">Projects</NavLink>
+            <NavLink href="#projects">Experience</NavLink>
             <NavSeparator />
-            <NavLink href="#skills">Skills</NavLink>
+            <NavLink href="#skills">Projects</NavLink>
             <NavSeparator />
-            <NavLink href="#experience">Experience</NavLink>
+            <NavLink href="#experience">Skills</NavLink>
             <NavSeparator />
             <NavLink href="#contact">Contact</NavLink>
           </nav>
