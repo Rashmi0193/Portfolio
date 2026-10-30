@@ -229,9 +229,9 @@ function Hero() {
         </div>
 
         <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl">
-          Building clean, reliable products — {" "}
+        Designing, developing, and delivering - {" "}
           <span className="bg-gradient-to-tr from-stone-900 via-amber-800 to-rose-700 bg-clip-text text-transparent">
-  from UI to backend.
+   scalable software experiences.
 </span>
         </h1>
 
